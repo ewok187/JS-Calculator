@@ -1,0 +1,67 @@
+body {
+  background: #274982;
+  text-align: center;
+}
+
+.calculator {
+  font-family: Bookman sans-serif;
+  font-size: 14px;
+  background: grey;
+  border: 3px solid;
+  border-radius:5px;
+  width: 250px;
+  height: 250px;
+  padding: 15px 10px 15px 10px;
+  margin: 10px auto;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+  -moz-transition: transform 2s;
+  -webkit-transition: transform 2s;
+  transition: transform 2;
+}
+
+#display {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  background-color: #c3c2ab;
+  margin-bottom: 15px;
+  padding: 0 5px 0 5px;
+  height: 35px;
+  width: 15em;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 2px;
+  text-align: right;
+}
+
+#del, #ac {
+  background-color: red;
+  border: red;
+}
+
+.keys {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 3px;
+  margin-left: 0.5px;
+
+ -webkit-transition: all 0.1s;
+ -moz-transition: all 0.1s;
+ transition: all 0.1s;
+
+ -webkit-box-shadow: 0px 1px 2px black;
+ -moz-box-shadow: 0px 1px 2px black;
+ box-shadow: 0px 2px 4px black;
+}
+
+.keys:active{
+ -webkit-box-shadow: 0px 2px 0px black;
+ -moz-box-shadow: 0px 2px 0px black;
+ box-shadow: 0px 2px 0px black;
+ position:relative;
+ top: 1px;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}

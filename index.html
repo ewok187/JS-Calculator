@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla JS Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <h1 class="display-3 text-center">Calculator</h1>
+  <div class="calculator">
+    <form>
+      <input type="text" id="display" disabled>
+      <br>
+      <input type="button" value="7" class="keys" onclick='toScreen("7")'>
+      <input type="button" value="8" class="keys" onclick='toScreen("8")'>
+      <input type="button" value="9" class="keys" onclick='toScreen("9")'>
+      <input type="button" value="DEL" class="keys" id="del" onclick='backspace()'>
+      <input type="button" value="AC" class="keys" id="ac" onclick='toScreen("c")'>
+      <br>
+      <input type="button" value="4" class="keys" onclick='toScreen("4")'>
+      <input type="button" value="5" class="keys" onclick='toScreen("5")'>
+      <input type="button" value="6" class="keys" onclick='toScreen("6")'>
+      <input type="button" value="&times;" class="keys" onclick='toScreen("*")'>
+      <input type="button" value="&divide;" class="keys" onclick='toScreen("/")'>
+      <br>
+      <input type="button" value="1" class="keys" onclick='toScreen("1")'>
+      <input type="button" value="2" class="keys" onclick='toScreen("2")'>
+      <input type="button" value="3" class="keys" onclick='toScreen("3")'>
+      <input type="button" value="+" class="keys" onclick='toScreen("+")'>
+      <input type="button" value="-" class="keys" onclick='toScreen("-")'>
+      <br>
+      <input type="button" value="0" class="keys" onclick='toScreen("0")'>
+      <input type="button" value="&middot;" class="keys" onclick='toScreen(".")'>
+      <input type="button" value="&#9762;" class="keys" onclick='rotateMe()'>
+      <input type="button" value="x^2" class="keys" onclick='power()'>
+      <input type="button" value="=" class="keys" onclick='answer()'>
+      <br>
+    </form>
+  </div>
+  <p class="display-5">by Konrad Wessalowski</p>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

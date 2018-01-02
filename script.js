@@ -17,8 +17,7 @@ function power() {  // x^2
 
 function backspace() { // DEL
   var num = box.value;
-  var len = num.length-1;
-  box.value = num.substring(0, len);
+  box.value = num.substring(0, num.length-1);
 }
 
 var degrees = 0;
